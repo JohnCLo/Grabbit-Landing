@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Grabbit- Free Delivery Made Simple</title>
+	<link rel="icon" type="image/favicon" href="img/favicon-32x32.png">
+	<link rel="stylesheet" href="css/min.css">
+</head>
+<body>
+	<div class="main_container">
+		<div class="frame">
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+			<a href="" class="js-icon-button-cvs"><img src="img/csv_rounded512.png" style="width:100px; margin-right:10px; margin-bottom:12px"></a>
+			<a href="" class="js-icon-button-starbucks"><img src="img/starbucks_rounded512.png" style="width:100px; margin-right:10px; margin-bottom:12px"></a>
+			<br/>
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+			<br/>
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+			<img src="img/empty512_2.png" style="width:100px; margin-right:10px; margin-bottom:12px">
+		</div>
+
+		<div class="content">
+			<a href="index.html" class="content--logo animated infinite bounce js-about_button"><img src="img/appIcon.png" alt=""></a>
+			<h1 class="content--title">Grabbit</h1>
+			<p class="content--claim">
+				<!--Grab <span class="grab">stuff</span> all the way from the Quad. <strong class="main_orange">For free.</strong>-->
+				Order, Payment, and Delivery Logistics all for only<strong class="main_orange"> $20/month</strong>. Allow your business to grow past the limit <strong class="main_orange">without comissions</strong>.
+			</p>
+			<a id="download--app" href="" style="display:none">Download the app</a>
+		</div>
+	</div>
+
+	<section class="about js-about">
+		<div class="about--inner r_clear">
+			<a href="index.html#" class="about--close js-about--close"><span></span></a>
+			<h2 class="about--title">Where?</h2>
+			<p class="about--text">Anywhere. Want to have a website and app that allows your loyal customers to order and pay with a click of a button? Want to have a delivery system that allows your drivers to claim and fulfill orders? Then you've come to the right place.</p>
+			<h2 class="about--title">What?</h2>
+			<p class="about--text">
+				Grabbit offers a full stack order and delivery software service. We make sure your business is up and running on modern infrastructure so you don't have to. Grabbit doesn't take any comissions.
+				<br/><br/>
+				What do we mean by no comissions? Many software services take a comission of sales, we do not. Grow your business as much as you want!
+			</p>
+			<h2 class="about--title">Who ?</h2>
+			<ul class="about--list">
+				<li>We're a team of motivated individuals located at 32 Mill St</li>
+			</ul>
+			<h2 class="about--title"><a href="mailto:hello@grabbit.io">Contact us</a></h2>
+			</a>
+		</div>
+	</section>
+
+	<section class="about js-download">
+		<div class="about--inner r_clear">
+			<a href="index.html#" class="about--close js-download--close"><span></span></a>
+			<h2 class="about--title">Beta Version 1.0.0</h2>
+			<p class="about--text">We're currently offering a limited beta of Grabbit for iOS users. After beta and evaluation trials are over users will be able to download Grabbit from the Apple AppStore and Android Marketplace. Thank you for your patience!</p>
+			<br/>
+			<br/>
+		
+			<div id="iphone_install" class="animated bounceInDown">
+				<p>Simply tap the <img class="share" src="img/iphone_share.png" /> button below, and choose "Add to Home Screen".</p>   
+				<p>The beta app will then be installed as an icon on your home screen.</p>
+				<p class="arrow">↓</p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main_footer">
+		<ul class="main_footer--list">
+			<li><a href="index.html#" class="js-about_button">About</a></li>
+			<li><a>Press Kit</a></li>
+		</ul>
+	</footer>
+	<div id="search_area"></div>
+
+	<script src="js/jquery.1.11.2.min.js"></script>
+	<script src="js/script.min.js"></script>
+	<script src="js/fastclick.min.js"></script>
+
+	<script>
+		// Fast Click
+		if ('addEventListener' in document) {
+		    document.addEventListener('DOMContentLoaded', function() {
+		        FastClick.attach(document.body);
+		    }, false);
+		}
+		// Display Download Button
+		var device_iphone = (/iphone|ipod/i.test(navigator.userAgent.toLowerCase()));  
+		if (device_iphone && window.navigator.standalone == false) { 
+			console.log("iPhone, Proceed");
+			$("#download--app").show()
+		} else { 
+	       console.log("Not an iPhone"); 
+	    }
+	</script>
+	
+</body>
+</html>
